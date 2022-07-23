@@ -2,6 +2,7 @@
 # Target Release:       1.0
 # Code Status:          Complete
 # Code Developer:       Sourav
+# Script Name:          multiClipboard.py
 ###
 
 import sys          # To access arguments
