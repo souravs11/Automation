@@ -59,6 +59,6 @@ if len(sys.argv) == 2:
         print(f'You entered: ',command)
         print(data)
     else:
-        print(f'Unknown command!')
+        print(f'Unknown command!')      # For commands which are not valid
 else:
     print(f'This command accepts only 1 command at a time.')
