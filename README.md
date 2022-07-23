@@ -9,6 +9,7 @@ Code Developer:       Sourav
 This script helps you maintain a clipboard-as-a-file.
 
 Valid commands
+
 __help__: Describe the script.
 
 __save__: Save something to the clipboard file.
