@@ -1,5 +1,5 @@
 # Automation
- This repo contains automation scripts.
+ This script is a part of the repo 'automation' which contains artifacts associated with automation.
 # Metadata
 Target Release:       1.0
 Code Status:          Complete
