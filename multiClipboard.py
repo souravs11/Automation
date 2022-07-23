@@ -15,6 +15,20 @@ import json
 # Access 1-onwards the command-line arguments
 # print(sys.argv[1:])
 
+# Defining a script that will save data in a JSON file at a location of your choice. This JSON file will act as your clipboard storage.
+def save_items(filepath, data):         
+    with open(filepath, "w") as f:      # Opening a file in 'write' mode. Create one, otherwise override.
+        json.dump(data, f)              # Dump the data into the file we opened
+
+# Function call to write data to clipboard storage
+# save_items("/Users/souravsarkar/Documents/Github/Automation/test.json", {"key":"value"})    # JSON is very similar to Python dictionaries
+
+# Defining a function to read everything that we have stored in our clipboard storage
+def load_items(filepath):
+    with open(filepath, "r") as f:
+        data = json.load(f)
+        return data
+
 # Checking the number of arguments
 if len(sys.argv) == 2:
     command = sys.argv[1]
@@ -29,4 +43,4 @@ if len(sys.argv) == 2:
     else:
         print(f'Unknown command!')
 else:
-    print(f'this command only accepts 1 command at a time.')
+    print(f'This command accepts only 1 command at a time.')
