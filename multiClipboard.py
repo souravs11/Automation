@@ -1,6 +1,6 @@
-import sys
-import clipboard
-import json
+import sys          # To access arguments
+import clipboard    # To access clipboard functions
+import json         # To work with JSON files
 
 # Access whatever is present on your clipboard
 # data = clipboard.paste()
@@ -49,8 +49,15 @@ if len(sys.argv) == 2:
         print(f'SUCCESS! Your clipboard data is stored with this key: ',key)
     elif command == 'load':
         print(f'You entered: ',command)
+        key = input('Enter a key: ')    # The key at which the data was stored
+        if key in data:
+            clipboard.copy(data[key])
+            print(f'SUCCESS! The data associated with this key is added to your clipboard')
+        else:
+            print("ERROR! This key doesn't exists!")
     elif command == 'list':
         print(f'You entered: ',command)
+        print(data)
     else:
         print(f'Unknown command!')
 else:
