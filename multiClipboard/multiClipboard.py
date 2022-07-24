@@ -3,6 +3,7 @@
 # Code Status:          Complete
 # Code Developer:       Sourav
 # Script Name:          multiClipboard.py
+# How to run:           python multiClipboard.py <command>
 ###
 
 import sys          # To access arguments
